@@ -10,7 +10,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
+var restaurant = require('./routes/restaurant');
 var settings = require('./settings');
 var flash = require('connect-flash');
 
@@ -60,7 +60,7 @@ app.use(session({
 }));
 
 app.use('/', index);
-app.use('/users', users);
+app.use('/restaurant', restaurant);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
