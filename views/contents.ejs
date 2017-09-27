@@ -1,181 +1,294 @@
-<%- include header %>
-    <!--=====================
-          Content
-======================-->
-    <div class="container">
-        <div class="row">
-            <div class="map">
-                <div class="row">
-                    <div class="grid_9">
-                        <figure class="">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094" style="border:0"></iframe>
-                        </figure>
-                    </div>
-                </div>
-                <div class="grid_8">
-                    <h2>餐廳名字</h2>
-                    <img src="images/page3_img1.jpg" alt="" class="img_inner fleft inn__1">
-                    <div class="extra_wrapper">
-                        <p> 合併簡介</p>
-                        <p>合併簡介</p>
-                        合併簡介
-                    </div>
-                    <div class="clear"></div>
-                    <h2>相關資訊</h2>
-                    <div class="map_block">
-                        <div class="map_title">Address:</div>
-                        台南市中西區國華街三段5號
-                    </div>
-                    <div class="map_block">
-                        <div class="map_title">Phones:</div>
-                        062210517
-                    </div>
-                </div>
-            </div>
+<!DOCTYPE html>
+<!--參考瀑布流模式-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-            <div class="grid_4 preffix_1">
-                <h2>Our Hours</h2>
-                <div class="form_title color1">
-                    11:00~18:00</div>
-                <h2>Tags</h2>
-                <ul class="list">
-                    <li><a href="#">Herem ipsum dolor </a></li>
-                    <li><a href="#">sit Komet,tetur </a></li>
-                    <li><a href="#">Odipiscingt</a></li>
-                    <li><a href="#">In mollis eratttis </a></li>
-                    <li><a href="#">Neque Loacilisis, sit </a></li>
-                    <li><a href="#">Amet ultret</a></li>
-                    <li><a href="#">Icies erat rutrums </a></li>
-                </ul>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>YummyBike</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+    <meta name="author" content="FREEHTML5.CO" />
 
-                <!--
-<form id="bookingForm">
-    <div class="tmInput">
-        <input name="Name" placeHolder="Name:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
-    </div>
-    <div class="tmInput">
-        <input name="Email" placeHolder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">
-    </div>
+    <!-- 
+	//////////////////////////////////////////////////////
 
-    <div class="clear"></div>
-    <div class="fl1 ">
-        <em>Adults</em>
-        <select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-            <option>1</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-        </select>         <div class="clear height1"></div>
--->
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
 
+	//////////////////////////////////////////////////////
+	 -->
 
-                <!--
-                </div>
-                <div class="fl1">
-                    <em>Children</em>
-                    <select name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-            <option>0</option>
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-        </select>
--->
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
 
-                <!--
-</div>
-<div class="clear"></div>
+    <!-- 合併部分 
+    <meta name="format-detection" content="telephone=no" />-->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic' rel='stylesheet' type='text/css'>
 
-<div class="tmTextarea">
-    <textarea name="Message" placeHolder="Message:" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
-</div>
-<div class="ta__right">
-    <a href="#" class="btn" data-type="reset">clear</a>
-    <a href="#" class="btn" data-type="submit">send</a>
-</div>
-</form>
-</div>
-</div>
-</div><div class="form_block">
--->
-                <!--
-<div class="container">
-    <div class="row">
-        <div class="grid_11">
-            <h2>Contact Form</h2>
-            <form id="form">
-                <div class="form_spinner">
-                    <img src="images/Preloader_4.gif" alt="">
-                </div>
-                <div class="modal fade response-message">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title">Modal title</h4>
-                            </div>
-                            <div class="modal-body">
-                                asfasfasf
-                            </div>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="/stylesheets/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="/stylesheets/icomoon.css">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="/stylesheets/simple-line-icons.css">
+    <!-- Datetimepicker -->
+    <link rel="stylesheet" href="/stylesheets/bootstrap-datetimepicker.min.css">
+    <!-- Flexslider -->
+    <link rel="stylesheet" href="/stylesheets/flexslider.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <!-- 合併部分 
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/stuck.css">
+    <link rel="stylesheet" href="css/style.css">
+    -->
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+    <!-- FOR IE9 below 
+    <!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+    <!-- 合併部分 
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tmStickUp.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/TMForm.js"></script>
+    <script src="js/modal.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+            $('#stuck_container').tmStickUp({});
+
+        });
+
+    </script>
+   
+    <script src="js/jquery.min.js"></script>
+    
+    <script src="js/jquery.easing.1.3.js"></script>
+  
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/moment.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    
+    <script src="js/jquery.waypoints.min.js"></script>
+    
+    <script src="js/jquery.stellar.min.js"></script>
+
+    
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script>
+        $(function() {
+            $('#date').datetimepicker();
+        });
+
+    </script>
+    
+    <script src="js/main.js"></script>
+    -->
+</head>
+
+<body>
+
+    <div id="fh5co-container">
+        <div id="fh5co-home" class="js-fullheight" data-section="home">
+
+            <div class="flexslider" data-section="logo">
+
+                <div class="fh5co-overlay"></div>
+                <div class="fh5co-text">
+                    <div class="container">
+                        <div class="row">
+                            <h1 class="to-animate">Yummy Bike</h1>
+
+                            <h2 class="to-animate">Lovely Designed <span>by</span> <a href="https://github.com/YummyClub">Team Club</a></h2>
                         </div>
                     </div>
                 </div>
-                <div class="response-error-message"></div>
-                <label class="name">
-                            <input type="text" name="name" placeholder="Name:" value="" data-constraints="@Required @JustLetters" />
-                            <span class="empty-message">*This field is required.</span>
-                            <span class="error-message">*This is not a valid name.</span>
-                        </label>
-                <label class="email">
-                            <input type="text" name="email" placeholder="E-mail:" value="" data-constraints="@Required @Email" />
-                            <span class="empty-message">*This field is required.</span>
-                            <span class="error-message">*This is not a valid email.</span>
-                        </label>
-                <label class="phone">
-                            <input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@Required @JustNumbers" />
-                            <span class="empty-message">*This field is required.</span>
-                            <span class="error-message">*This is not a valid phone.</span>
-                        </label>
-                <label class="message">
-                            <textarea name="message" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-                            <span class="empty-message">*This field is required.</span>
-                            <span class="error-message">*The message is too short.</span>
-                        </label>
-                <div class="clear"></div>
-                <div class="btns">
-                    <a href="#" data-type="reset" class="btn">clear</a>
-                    <a href="#" data-type="submit" class="btn">send</a>
-                </div>
-            </form>
+                <ul class="slides">
+                    <li style="background-image: url(images/slide_1.jpg);" data-stellar-background-ratio="0.5"></li>
+                    <li style="background-image: url(images/slide_2.jpg);" data-stellar-background-ratio="0.5"></li>
+                    <li style="background-image: url(images/slide_3.jpg);" data-stellar-background-ratio="0.5"></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <title>Travel modes in directions</title>
+        <style>
+            /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+            
+            #map {
+                height: 100%;
+            }
+            /* Optional: Makes the sample page fill the window. */
+            
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #floating-panel {
+                position: absolute;
+                top: 10px;
+                left: 25%;
+                z-index: 5;
+                background-color: #fff;
+                padding: 5px;
+                border: 1px solid #999;
+                text-align: center;
+                font-family: 'Roboto', 'sans-serif';
+                line-height: 30px;
+                padding-left: 10px;
+            }
+        </style>
+
+        <!--==============================
+              header
+=================================-->
+        <!--        <header>-->
+        <!--==============================
+            Stuck menu
+=================================-->
+        <!--
+       <section id="stuck_container">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <h1>
+                            <a href="index.html">
+            <img src="images/yummybile_logo.png" alt="Logo alt">
+          </a>
+                        </h1>
+
+            </div>
         </div>
     </div>
-</div>
-</div>
+</section>
 -->
-                <!-- jQuery -->
-                <script src="js/jquery.min.js"></script>
-                <!-- jQuery Easing -->
-                <script src="js/jquery.easing.1.3.js"></script>
-                <!-- Bootstrap -->
-                <script src="js/bootstrap.min.js"></script>
-                <!-- Bootstrap DateTimePicker -->
-                <script src="js/moment.js"></script>
-                <script src="js/bootstrap-datetimepicker.min.js"></script>
-                <!-- Waypoints -->
-                <script src="js/jquery.waypoints.min.js"></script>
-                <!-- Stellar Parallax -->
-                <script src="js/jquery.stellar.min.js"></script>
 
-                <!-- Flexslider -->
-                <script src="js/jquery.flexslider-min.js"></script>
-                <script>
-                    $(function() {
-                        $('#date').datetimepicker();
-                    });
 
-                </script>
-                <!-- Main JS -->
-                <script src="js/main.js"></script>
+        <!--=====================
+          Content
+======================-->
+        <section class="content ctn__1">
+            <!--            <div class="ic">More Website Templates @ TemplateMonster.com - July 30, 2014!</div>-->
+            <div class="container">
+                <div class="row">
+                    <div class="grid_12">
+                        <div class="map">
+                            <div class="row">
+                                <div class="grid_9">
+                                    <figure class="">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094" style="border:0"></iframe>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <h2>邱家小卷米粉</h2>
+                        <div class="row">
+                            <div class="grid_3">
+                                <div class="map_block">
+                                    <div class="map_title">Address:</div>
+                                    台南市中西區國華街三段5號
+                                </div>
+                                <div class="map_block">
+                                    <div class="map_title">Phones:</div>
+                                    062210517
+                                </div>
+                                <div class="map_block">
+                                    <div class="map_title">Business hour:</div>
+                                    11:00~18:00
+                                </div>
+                            </div>
+                        </div>
+                        <h2>相關圖片</h2>
+                        <blockquote>
+                            <img src="images/chuchia1.jpg" width="360" height="272" alt="food image">
+                            <img src="images/chuchia2.jpg" width="360" height="272" alt="food image">
+                            <img src="images/chuchia3.jpg" width="360" height="272" alt="food image">
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                </body>
+        <!--==============================
+              footer
+=================================-->
 
-                </html>
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Bootstrap DateTimePicker -->
+        <script src="js/moment.js"></script>
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <!-- Waypoints -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Stellar Parallax -->
+        <script src="js/jquery.stellar.min.js"></script>
+
+        <!-- Flexslider -->
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script>
+            $(function () {
+                $('#date').datetimepicker();
+            });
+        </script>
+        <!-- Main JS -->
+        <script src="js/main.js"></script>
+</body>
+
+</html>
