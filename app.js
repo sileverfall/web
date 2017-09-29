@@ -95,10 +95,9 @@ http.createServer(app).listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
 
-$(document).ready(function () {
-    initSubmitForm();
-});
-
+//$(document).ready(function () {
+//    initSubmitForm();
+//});
 var initSubmitForm = function () {
     // 使用 ajax() 來呼叫 REST API
     $.ajax({

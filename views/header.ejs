@@ -41,9 +41,10 @@
     <meta name="twitter:url" content="" />
     <meta name="twitter:card" content="" />
 
+    <!-- 合併部分 
+    <meta name="format-detection" content="telephone=no" />-->
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
-
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic' rel='stylesheet' type='text/css'>
 
     <!-- Animate.css -->
@@ -61,6 +62,11 @@
 
     <link rel="stylesheet" href="/stylesheets/style.css">
 
+    <!-- 合併部分 
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/stuck.css">
+    <link rel="stylesheet" href="css/style.css">
+    -->
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
 
@@ -69,7 +75,55 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+    <!-- 合併部分 
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tmStickUp.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/TMForm.js"></script>
+    <script src="js/modal.js"></script>
 
+    <script>
+        $(document).ready(function() {
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+            $('#stuck_container').tmStickUp({});
+
+        });
+
+    </script>
+   
+    <script src="js/jquery.min.js"></script>
+    
+    <script src="js/jquery.easing.1.3.js"></script>
+  
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/moment.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    
+    <script src="js/jquery.waypoints.min.js"></script>
+    
+    <script src="js/jquery.stellar.min.js"></script>
+
+    
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script>
+        $(function() {
+            $('#date').datetimepicker();
+        });
+
+    </script>
+    
+    <script src="js/main.js"></script>
+    -->
 </head>
 
 <body>
@@ -118,12 +172,48 @@
         <!-- Flexslider -->
         <script src="js/jquery.flexslider-min.js"></script>
         <script>
-            $(function () {
+            $(function() {
                 $('#date').datetimepicker();
             });
+
         </script>
-        <!-- Main JS -->
-        <script src="js/main.js"></script>
+
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <title>Travel modes in directions</title>
+        <style>
+            /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+            #map {
+                height: 70%;
+            }
+
+            /* Optional: Makes the sample page fill the window. */
+
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            #floating-panel {
+                position: absolute;
+                top: 10px;
+                left: 25%;
+                z-index: 5;
+                background-color: #fff;
+                padding: 5px;
+                border: 1px solid #999;
+                text-align: center;
+                font-family: 'Roboto', 'sans-serif';
+                line-height: 30px;
+                padding-left: 10px;
+            }
+
+        </style>
+
 
 </body>
 
