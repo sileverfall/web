@@ -91,36 +91,35 @@ app.use(function (err, req, res, next) {
 app.get('/hello', hello.index);
 
 
-http.createServer(app).listen(app.get('port'), function () {
-    console.log('Express server listening on port ' + app.get('port'));
-});
-
+//http.createServer(app).listen(app.get('port'), function () {
+//    console.log('Express server listening on port ' + app.get('port'));
+//});
 //$(document).ready(function () {
 //    initSubmitForm();
 //});
-var initSubmitForm = function () {
-    // 使用 ajax() 來呼叫 REST API
-    $.ajax({
-        url: 'http://localhost:3000',
-        type: "GET",
-        dataType: "json",
-        complete: function (data, textStatus, jqXHR) {
-            console.log(textStatus);
-        },
-        success: function (data, textStatus, jqXHR) {
-            console.log(data);
-        }
-    });
-
-    return false;
-};
-var dataMapping = function (data) {
-    for (i = 0; i < data.length; i++) {
-        var htmlCode =
-            "<div class=\"alert alert-dismissable alert-info\">" + "     <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">×</button>" + "     <h4>jollen</h4>" + data[i].message + "</div>";
-
-        $('#message').append(htmlCode);
-    }
-}
+//var initSubmitForm = function () {
+//    // 使用 ajax() 來呼叫 REST API
+//    $.ajax({
+//        url: 'http://localhost:3000',
+//        type: "GET",
+//        dataType: "json",
+//        complete: function (data, textStatus, jqXHR) {
+//            console.log(textStatus);
+//        },
+//        success: function (data, textStatus, jqXHR) {
+//            console.log(data);
+//        }
+//    });
+//
+//    return false;
+//};
+//var dataMapping = function (data) {
+//    for (i = 0; i < data.length; i++) {
+//        var htmlCode =
+//            "<div class=\"alert alert-dismissable alert-info\">" + "     <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">×</button>" + "     <h4>jollen</h4>" + data[i].message + "</div>";
+//
+//        $('#message').append(htmlCode);
+//    }
+//}
 
 module.exports = app;
