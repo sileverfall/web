@@ -17,8 +17,8 @@ var settings = require('./settings');
 var flash = require('connect-flash');
 
 //var db = require('./models/db.js');
-var session = require('express-session');
-var MongoStore = require('connect-mongo')(session);
+//var session = require('express-session');
+//var MongoStore = require('connect-mongo')(session);
 //var MongoStore = require('connect-mongo/es5')(session);
 //var sessionStore = new MongoStore({
 //    host: '10.120.27.23',
@@ -50,20 +50,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 routes(app);
 
-app.use(session({
-    secret: settings.cookieSecret,
-    key: settings.db,
-    cookie: {
-        maxAge: 1000 * 60 * 60 * 24 * 30
-    },
-    store: new MongoStore({
-        db: settings.db,
-        host: settings.host,
-        port: settings.port,
-        url: 'mongodb://10.120.27.23:27017'
-    })
-}));
-
+////app.use(session({
+                //    secret: settings.cookieSecret,
+                //    key: settings.db,
+                //    cookie: {
+                //        maxAge: 1000 * 60 * 60 * 24 * 30
+                //    },
+                //    store: new MongoStore({
+                //        db: settings.db,
+                //        host: settings.host,
+                //        port: settings.port,
+                //        url: 'mongodb://10.120.27.23:27017'
+                //    })
+                //}));
 app.use('/', index);
 app.use('/restaurant', restaurant);
 
